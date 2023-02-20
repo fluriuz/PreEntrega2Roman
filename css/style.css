@@ -1,35 +1,98 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color: black;
-    
+    height: 100%;
 }
 
-h1{
-    color: red;
-    background-color: blue;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    position: static;
     width: 100%;
+
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.navegador a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.navegador a:hover {
+    background-color: gray;
+}
+
+@media (max-width: 992px){
+    .header {
+        flex-direction: column;
+    }
+
+.navegador {
+        flex-direction: column;
+        gap: 7px;
+        align-items: center;
+}
+
+.navegador a {
+        font-size: 14px;
+        padding: 5px;
+
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/foto\ taller\ inicio.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 80%;
+    width: 100%;
+    padding: 250px;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
     font-size: 50px;
+    color: red;
+
+
 }
 
 .title {
-    background-color: black;
     color: red;
     float: left;
     margin: 0 auto;
     width: fit-content;
 }
 
-
-
 .highlight {
     color: white;
 }
-
 
 .login-container {
     position: absolute;
@@ -37,45 +100,89 @@ h1{
     top: 0;
 }
 
-h2{
+h2 {
     font-size: 25px;
 }
 
-body{
-    background-color: gainsboro;
-}
 
-section p{
+
+section p {
     color: rgb(192, 20, 20);
 }
 
-.bk-gris{
+.bk-gris {
     background-color: grey;
 }
 
-.tarjeta-motor{
+.tarjeta-motor {
     border: 1px solid black;
     border-radius: 8px;
     padding: 20px;
     width: 300px;
 }
 
-.tarjeta-motor img{
+.tarjeta-motor img {
     width: 100%;
 }
 
-.tarjeta-tratamientos{
+.tarjeta-tratamientos {
+    align-items: center;
     border: 1px solid black;
     border-radius: 8px;
     padding: 20px;
     width: 300px;
 }
-.tarjeta-tratamientos img{
+
+.tarjeta-tratamientos img {
+    width: 100%;
+}
+.tarjeta-limpiezadeinterior {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+.tarjeta-limpiezadeinterior img {
+    width: 100%;
+}
+.tarjeta-opticas {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+.tarjeta-opticas img {
+    width: 100%;
+}
+.tarjeta-llantas {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+.tarjeta-llantas img {
     width: 100%;
 }
 
-footer p{
-    color: red;
-    background-color: blue;
+.animate-zoom:hover img,
+.animate-zoom:focus img {
+    transform: scale(1.1);
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.animate-zoom img {
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
 }
 

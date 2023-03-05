@@ -3,103 +3,37 @@
     padding: 0;
 }
 
-body {
-    background-color: black;
-    height: 100%;
-}
+.card-subtitle {
 
-.header {
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
     align-items: center;
-    position: static;
-    width: 100%;
+    border: 5px solid black;
+    border-radius: 8px;
+    width: 300px;
+    margin: 50px;
+    padding: 25px;
 
 }
 
-.navegador {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-
-}
-
-.navegador a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.navegador a:hover {
-    background-color: gray;
-}
-
-    @media (max-width: 992px){
-    .header {
-        flex-direction: column;
-    }
-    .navegador {
-        flex-direction: column;
-        gap: 7px;
-        align-items: center;
-}
-
-.navegador a {
-        font-size: 14px;
-        padding: 5px;
-
-}
+.img-nosotros {
+    border-radius: 8px;
+    border: 5px solid black;
+    align-items: center;
+    justify-content: center;
 }
 
 
-
-.hero {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/Audi\ RS3\ wagon_\ \ Yes\ please_.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    height: 80%;
-    width: 100%;
-    padding: 250px;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.hero-text h1 {
-    font-size: 50px;
-    color: red;
-
-
-}
-
-.title {
-    color: red;
-    float: left;
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.highlight {
-    color: white;
-}
 
 .login-container {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 h2 {
@@ -116,74 +50,17 @@ section p {
     background-color: grey;
 }
 
-.tarjeta-motor {
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-}
 
-.tarjeta-motor img {
-    width: 100%;
-}
 
-.tarjeta-tratamientos {
+.mainContent {
+    background-color: black;
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
+    width: 100%;
+    padding: auto;
 }
 
-.tarjeta-tratamientos img {
-    width: 100%;
-}
-.tarjeta-limpiezadeinterior {
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-}
-.tarjeta-limpiezadeinterior img {
-    width: 100%;
-}
-.tarjeta-opticas {
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-}
-.tarjeta-opticas img {
-    width: 100%;
-}
-.tarjeta-llantas {
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-}
-.tarjeta-llantas img {
-    width: 100%;
-}
-
-.animate-zoom:hover img,
-.animate-zoom:focus img {
-    transform: scale(1.1);
-}
-
-img {
-    max-width: 100%;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.animate-zoom img {
-    transform-origin: center;
-    transition: transform 0.4s ease-in-out;
+.form-label {
+    color: white;
+    background-color: brown;
 }

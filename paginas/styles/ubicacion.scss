@@ -1,0 +1,104 @@
+// Variables
+$primary-color: #030608;
+$white-color: #fff;
+
+// Mixin
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Nesting
+header {
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: $primary-color;
+    color: $white-color;
+    font-family: Arial, sans-serif;
+
+    #bannerPrincipal {
+      padding-left: 10px;
+      font-size: 2em;
+
+      .logo {
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        span.highlight {
+          color: $white-color;
+        }
+      }
+    }
+
+    .navegador {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+
+      a {
+        color: $white-color;
+        text-decoration: none;
+        margin: 0 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.mapa-container {
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    margin-top: 20px;
+  }
+}
+
+.container-fluid.bg-black {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: $white-color;
+    font-family: Arial, sans-serif;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+
+      li {
+        list-style: none;
+
+        a {
+          color: $white-color;
+          text-decoration: none;
+          margin: 0 10px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

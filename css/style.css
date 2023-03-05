@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 .card-subtitle {
 
@@ -31,14 +28,9 @@
     top: 0;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
 
-}
 
-h2 {
-    font-size: 25px;
-}
+
 
 
 

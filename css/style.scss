@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
+    color: red;
     height: 100%;
+    
 }
 
 .header {
@@ -84,4 +91,13 @@ body {
         gap: 7px;
         align-items: center;
     }
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+h2 {
+    font-size: 25px;
 }

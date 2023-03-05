@@ -1,3 +1,7 @@
+.container-fluid {
+  background-repeat: no-repeat;
+}
+
 .mainServicios {
   background-color: black;
   display: flex;
@@ -68,22 +72,15 @@
 .mainServicios .tarjeta-llantas img {
   width: 100%;
 }
-.mainServicios .animate-zoom:hover img,
-.mainServicios .animate-zoom:focus img {
-  transform: scale(1.1);
-}
-.mainServicios figure {
+
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
-.mainServicios .animate-zoom img {
-  transform-origin: center;
-  transition: transform 0.4s ease-in-out;
 }
 
 body {
   background-color: black;
+  color: red;
   height: 100%;
 }
 
@@ -156,6 +153,13 @@ body {
     gap: 7px;
     align-items: center;
   }
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=index.css.map */

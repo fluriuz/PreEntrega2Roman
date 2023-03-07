@@ -1,4 +1,59 @@
+$color-principal: #f00;
+$color-secundario: #0f0;
+$color-fondo: #000;
 
-head {
-    text-align: center;
+@mixin encabezado {
+    background-color: $color-fondo;
+    color: $color-secundario;
+    
+
+}
+
+
+.header {
+    @include encabezado;
+    
+}
+
+
+
+.container {
+    background-repeat: no-repeat ;
+    background-image: url(/img/prshenegra.jfif);
+    height: 500px;
+    
+    h1 {
+        color: $color-principal;
+    }
+}
+
+
+$tamano-titulo: 2rem;
+$espacio-interlineal: 1.5;
+
+.title {
+    font-size: $tamano-titulo;
+    line-height: $espacio-interlineal;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    
+    .row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+    
+        .row-cols-auto {
+        grid-column: 1 / span 4;
+        }
+    
+        .title {
+        grid-column: 5 / span 8;
+    }
+    }
 }

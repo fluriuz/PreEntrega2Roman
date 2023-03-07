@@ -1,13 +1,52 @@
-head {
-  text-align: center;
+.header {
+  background-color: #000;
+  color: #0f0;
+}
+
+.container {
+  background-repeat: no-repeat;
+  background-image: url(/img/prshenegra.jfif);
+  height: 500px;
+}
+.container h1 {
+  color: #f00;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.container .row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.container .row .row-cols-auto {
+  grid-column: 1/span 4;
+}
+.container .row .title {
+  grid-column: 5/span 8;
 }
 
 .mainServicios {
   background-color: black;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: auto;
   padding: auto;
+}
+.mainServicios iframe {
+  align-items: center;
+  display: flex;
 }
 .mainServicios .tarjeta-motor {
   display: flex;
@@ -16,6 +55,7 @@ head {
   border-radius: 8px;
   padding: 20px;
   width: 300px;
+  gap: 10px;
 }
 .mainServicios .tarjeta-motor img {
   width: 100%;
@@ -73,7 +113,7 @@ head {
   width: 100%;
 }
 
-header .header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,71 +122,38 @@ header .header {
   color: #fff;
   font-family: Arial, sans-serif;
 }
-header .header #bannerPrincipal {
+.header #bannerPrincipal {
   padding-left: 10px;
   font-size: 2em;
 }
-header .header #bannerPrincipal .logo {
+.header #bannerPrincipal .logo {
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
-header .header #bannerPrincipal .logo span.highlight {
+.header #bannerPrincipal .logo span.highlight {
   color: #fff;
 }
-header .header .navegador {
+.header .navegador {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
 }
-header .header .navegador a {
+.header .navegador a {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
 }
-header .header .navegador a:hover {
+.header .navegador a:hover {
   text-decoration: underline;
 }
 
 .mapa-container iframe {
   width: 100%;
   height: 450px;
-  border: none;
+  border: red;
   margin-top: 20px;
-}
-
-.container-fluid.bg-black footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: black;
-  color: #fff;
-  font-family: Arial, sans-serif;
-}
-.container-fluid.bg-black footer p {
-  margin: 0;
-}
-.container-fluid.bg-black footer a {
-  text-decoration: none;
-}
-.container-fluid.bg-black footer ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0;
-}
-.container-fluid.bg-black footer ul li {
-  list-style: none;
-}
-.container-fluid.bg-black footer ul li a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-.container-fluid.bg-black footer ul li a:hover {
-  text-decoration: underline;
 }
 
 * {
